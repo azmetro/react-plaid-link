@@ -199,13 +199,13 @@ class PlaidLink extends Component {
   render() {
     return (
       <div>
-        <button
+        <div
           onClick={this.handleOnClick}
           disabled={this.state.disabledButton}
           style={this.props.style}
           className={this.props.className}>
           {this.props.children}
-        </button>
+        </div>
         <Script
           url={this.state.initializeURL}
           onError={this.onScriptError}
